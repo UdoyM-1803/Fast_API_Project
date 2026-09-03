@@ -3,9 +3,9 @@ import json
 
 app = FastAPI()
 
-def load_data():
+def load_data():                    # Loaded data from expenses.json
     with open('expenses.json','r') as f:
-        data = json.load(p)
+        data = json.load(f)
     return data
 
 @app.get("/hello")       #Decorator
@@ -18,4 +18,5 @@ def about():
 
 @app.get("/view")           # To read our expenses
 def view_expenses():
-    return "This is our about page."
+    data = load_data()
+    return data
