@@ -20,3 +20,8 @@ def about():
 def view_expenses():
     data = load_data()
     return data
+
+@app.get("/view/{expense_id}")           # To read our expenses
+def view_expenses(expense_id: str):
+    data = load_data()
+    return data[expense_id]
