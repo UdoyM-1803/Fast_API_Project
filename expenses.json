@@ -1,72 +1,79 @@
 {
-  "E001": {
-    "name": "Lunch",
-    "amount": 250,
-    "category": "Food",
-    "date": "2026-09-01",
-    "description": "Lunch at a local restaurant"
-  },
-  "E002": {
-    "name": "Bus Fare",
-    "amount": 60,
-    "category": "Transportation",
-    "date": "2026-09-01",
-    "description": "Bus fare for university"
-  },
-  "E003": {
-    "name": "Notebook",
-    "amount": 120,
-    "category": "Education",
-    "date": "2026-09-02",
-    "description": "Purchased a notebook for class"
-  },
-  "E004": {
-    "name": "Coffee",
-    "amount": 150,
-    "category": "Food",
-    "date": "2026-09-02",
-    "description": "Coffee with friends"
-  },
-  "E005": {
-    "name": "Internet Bill",
-    "amount": 800,
-    "category": "Bills",
-    "date": "2026-09-02",
-    "description": "Monthly internet subscription"
-  },
-  "E006": {
-    "name": "Mobile Recharge",
-    "amount": 300,
-    "category": "Communication",
-    "date": "2026-09-03",
-    "description": "Mobile balance recharge"
-  },
-  "E007": {
-    "name": "Groceries",
-    "amount": 1250,
-    "category": "Shopping",
-    "date": "2026-09-03",
-    "description": "Bought groceries for the week"
-  },
-  "E008": {
-    "name": "Movie Ticket",
-    "amount": 450,
-    "category": "Entertainment",
-    "date": "2026-09-03",
-    "description": "Movie ticket with friends"
-  },
-  "E009": {
-    "name": "Medicine",
-    "amount": 350,
-    "category": "Healthcare",
-    "date": "2026-09-03",
-    "description": "Purchased basic medicine"
-  },
-  "E010": {
-    "name": "Rickshaw Fare",
-    "amount": 100,
-    "category": "Transportation",
-    "date": "2026-09-03",
-    "description": "Rickshaw fare to university"
-  }
+    "E001": {
+        "name": "Lunch",
+        "amount": 250,
+        "category": "Food",
+        "date": "2026-09-01",
+        "description": "Lunch at a local restaurant"
+    },
+    "E002": {
+        "name": "Bus Fare",
+        "amount": 60,
+        "category": "Transportation",
+        "date": "2026-09-01",
+        "description": "Bus fare for university"
+    },
+    "E003": {
+        "name": "Notebook",
+        "amount": 120,
+        "category": "Education",
+        "date": "2026-09-02",
+        "description": "Purchased a notebook for class"
+    },
+    "E004": {
+        "name": "Coffee",
+        "amount": 150,
+        "category": "Food",
+        "date": "2026-09-02",
+        "description": "Coffee with friends"
+    },
+    "E005": {
+        "name": "Internet Bill",
+        "amount": 800,
+        "category": "Bills",
+        "date": "2026-09-02",
+        "description": "Monthly internet subscription"
+    },
+    "E006": {
+        "name": "Mobile Recharge",
+        "amount": 300,
+        "category": "Communication",
+        "date": "2026-09-03",
+        "description": "Mobile balance recharge"
+    },
+    "E007": {
+        "name": "Groceries",
+        "amount": 1250,
+        "category": "Shopping",
+        "date": "2026-09-03",
+        "description": "Bought groceries for the week"
+    },
+    "E008": {
+        "name": "Movie Ticket",
+        "amount": 450,
+        "category": "Entertainment",
+        "date": "2026-09-03",
+        "description": "Movie ticket with friends"
+    },
+    "E009": {
+        "name": "Medicine",
+        "amount": 350,
+        "category": "Healthcare",
+        "date": "2026-09-03",
+        "description": "Purchased basic medicine"
+    },
+    "E010": {
+        "name": "Rickshaw Fare",
+        "amount": 100,
+        "category": "Transportation",
+        "date": "2026-09-03",
+        "description": "Rickshaw fare to university"
+    },
+    "E011": {
+        "name": "Dinner",
+        "amount": 500,
+        "category": "Food",
+        "date": "2026-08-09",
+        "description": "Dinner at the restaurant"
+    }
 }
