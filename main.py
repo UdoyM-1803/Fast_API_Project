@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Path
 from pydantic import BaseModel, Field
-from typing import Annotated
+from typing import Annotated, Optional
 import json
 
 app = FastAPI()
@@ -12,6 +12,13 @@ class Expense(BaseModel):
     category: Annotated[str, Field(..., description="Category of the expenses", example="Food")]
     date: Annotated[str, Field(..., description="Date of the expenses", example="2026-08-01")]
     description: Annotated[str, Field(..., description="Description of the expenses", example="Lunch at the restaurant")]
+
+class ExpenseUpdate(BaseModel):
+    name: Annotated[Optional[str], Field(default=None)]
+    amount: Annotated[Optional[int], Field(default=None)]
+    category: Annotated[Optional[str], Field(default=None)]
+    date: Annotated[Optional[str], Field(default=None)]
+    description: Annotated[Optional[str], Field(default=None)]
 
 def load_data():                    # Loaded data from expenses.json
     with open('expenses.json','r') as f:
@@ -72,5 +79,14 @@ def create_expense(expense: Expense):
     if expense.id in data:
         raise HTTPException(status_code=400, detail="Expense ID already exists")
     data[expense.id] = expense.model_dump(exclude=['id'])
+    save_data(data)
+
+
+@app.put("/edit/{expense_id}")
+def update_expense(expense_id: str, expense: ExpenseUpdate): 
+    data = load_data()
+    if expense_id not in data:
+        raise HTTPException(status_code=400, detail="Expense not found")
+    data[expense_id].update(expense.model_dump(exclude_unset=True))
     save_data(data)
 

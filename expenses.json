@@ -57,14 +57,14 @@
     },
     "E009": {
         "name": "Medicine",
-        "amount": 350,
+        "amount": 450,
         "category": "Healthcare",
         "date": "2026-09-03",
         "description": "Purchased basic medicine"
     },
     "E010": {
         "name": "Rickshaw Fare",
-        "amount": 100,
+        "amount": 200,
         "category": "Transportation",
         "date": "2026-09-03",
         "description": "Rickshaw fare to university"
