@@ -90,3 +90,11 @@ def update_expense(expense_id: str, expense: ExpenseUpdate):
     data[expense_id].update(expense.model_dump(exclude_unset=True))
     save_data(data)
 
+@app.delete("/delete/{expense_id}")
+def delete_expense(expense_id: str): 
+    data = load_data()
+    if expense_id not in data:
+        raise HTTPException(status_code=400, detail="Expense not found")
+    del data[expense_id]
+    save_data(data)
+
